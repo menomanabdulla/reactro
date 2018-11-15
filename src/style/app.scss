@@ -1,0 +1,119 @@
+body{
+    background: #f0f2f5;
+}
+.ant-layout-header{
+    display: flex;
+	align-items: center;
+}
+.dsbrd-btn-block{
+    flex-grow: 1;
+    padding: 0 15px;
+    max-width: 100px;
+    i.la{
+        cursor: pointer;
+        display: block;
+    }
+    min-width: 50px;
+	.la{
+		font-size: 35px;
+	}
+}
+.search-block{
+    flex-grow: 2;
+    margin-right: 50px;
+    max-width: 300px;
+	input{
+		width: 100%;
+		padding: 0px 15px;
+		border: none;
+		box-shadow: none;
+		&:hover,
+		&:focus,
+		&:active{
+			border: none;
+			box-shadow: none;
+			outline: 0;
+		}
+	}
+	.search-control{
+		position: relative;
+		button{
+            position: absolute;
+			background: #fff;
+			border: none;
+			box-shadow: none;
+            outline: 0;
+            height: 100%;
+			
+			right: 0;
+			.la{
+				font-size: 22px;
+			}
+			cursor: pointer;
+			&:hover,
+			&:focus,
+			&:active{
+				border: none;
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.profile-hyper{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	img{
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+	}
+	h5{
+		font-size: 14px;
+		padding: 0 15px;
+		margin-bottom: 0;
+		color: #444444;
+	}
+}
+.profile-block{
+    margin-left: auto;
+}
+.profile-block-content{
+	background: #fff;
+	padding: 15px;
+}
+.profile-info{
+	.porfile-info-user{
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		img{
+			height: 80px;
+			width: 80px;
+			border-radius: 50%;
+		}
+		div{
+			padding: 0 20px;
+		}
+		h5{
+			font-size: 18px;
+			margin-bottom: 0;	
+		}
+		p{
+			margin: 0;
+		}
+	}
+}
+.user-prop-list{
+    display: block;
+    padding: 0;
+	li{
+		display: block;
+		margin: 8px 0;
+		a{
+			display: block;
+		}
+	}
+}
+
