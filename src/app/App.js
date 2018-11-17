@@ -1,11 +1,10 @@
 import React from 'react';
 import { Layout, Menu, Icon} from 'antd';
 import ProfileMenu from './widget/profileMenu';
+import Dashboard from './router/dashboard';
 
 const { Header, Sider, Content } = Layout;
 const SubMenu = Menu.SubMenu;
-
-
 
 class app extends React.Component {
   state = {
@@ -30,7 +29,15 @@ class app extends React.Component {
           <div className="logo logo-block">
             <h4>Reactro</h4>
           </div>
+
           <Menu mode="inline" defaultSelectedKeys={['1']}>
+            <Menu.Item key="1">
+              <Icon type="crown" />
+              <span>Dashboard</span>
+            </Menu.Item>
+            <Menu.Item className="menu-title-block">
+                <h3 className="menu-title">Dashboard</h3>
+            </Menu.Item>
             <SubMenu
                 key="sub1"
                 title={<span><Icon type="user" /><span>User</span></span>}
@@ -39,7 +46,7 @@ class app extends React.Component {
                 <Menu.Item key="4">Bill</Menu.Item>
                 <Menu.Item key="5">Alex</Menu.Item>
             </SubMenu>
-            <Menu.Item key="1">
+            <Menu.Item key="10">
               <Icon type="user" />
               <span>nav 1</span>
             </Menu.Item>
@@ -78,7 +85,7 @@ class app extends React.Component {
             </div> 
           </Header>
           <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
-            Content
+            <Dashboard/>
           </Content>
         </Layout>
       </Layout>

@@ -43,7 +43,7 @@ const ProfileMenu = (props) => {
         <Dropdown overlay={menu} trigger={['click']}>
           <div className="profile-hyper">
             <img src={process.env.PUBLIC_URL + '/images/profile/2.jpg'} alt="user"/>
-            <h5>Robert Chavez</h5>
+            <h5>stan lee</h5>
           </div>
         </Dropdown>
     )
