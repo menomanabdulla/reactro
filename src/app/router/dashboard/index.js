@@ -1,6 +1,8 @@
 import React from 'react';
 import { Row, Col, Icon } from 'antd';
 import './dashboard.scss'
+import BarChart from '../dashboard-widget/chart/BarChart';
+import LineChart from '../dashboard-widget/chart/LineChart';
 class dashboard extends React.Component {
 render(){
     return(
@@ -58,6 +60,17 @@ render(){
                 </div>
             </div>
           </Col>
+          <Col className="gutter-row" span={12}>
+            <div className="chart-block">
+                <BarChart/>
+            </div>
+          </Col>
+          <Col className="gutter-row" span={12}>
+            <div className="chart-block">
+                <LineChart/>
+            </div>
+          </Col>
+            
         </Row>
       </div>
     );
