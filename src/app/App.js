@@ -2,6 +2,8 @@ import React from 'react';
 import { Layout, Menu, Icon} from 'antd';
 import ProfileMenu from './widget/profileMenu';
 import Dashboard from './router/dashboard';
+import ButtonUI from './router/ui-component/button';
+import { Router, Route, Switch } from 'react-router';
 
 const { Header, Sider, Content } = Layout;
 const SubMenu = Menu.SubMenu;
@@ -85,7 +87,7 @@ class app extends React.Component {
             </div> 
           </Header>
           <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
-            <Dashboard/>
+            <ButtonUI/>
           </Content>
         </Layout>
       </Layout>
