@@ -3,6 +3,7 @@ import { Row, Col, Icon } from 'antd';
 import './dashboard.scss'
 import BarChart from '../dashboard-widget/chart/BarChart';
 import LineChart from '../dashboard-widget/chart/LineChart';
+import VectorMap from '../vector-map/VectorMap';
 class dashboard extends React.Component {
 render(){
     return(
@@ -70,7 +71,9 @@ render(){
                 <LineChart/>
             </div>
           </Col>
-            
+          <Col className="gutter-row" span={24}>
+            <VectorMap/>
+          </Col>
         </Row>
       </div>
     );

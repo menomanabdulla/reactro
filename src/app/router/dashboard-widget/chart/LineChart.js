@@ -1,13 +1,7 @@
 import React from 'react';
 import {Line} from 'react-chartjs-2';
 
-
-
 const data = (canvas) => {
-  const ctx = canvas.getContext("2d");
-  const gradient = ctx.createLinearGradient(0, 0, 0, 400);
-  gradient.addColorStop(0, 'rgba(124,132,254,1)');
-  gradient.addColorStop(1, 'rgba(149,199,255,.6)');
   return{
     labels: ['JAN', 'MAR', 'MAY', 'JUL','SEP','NOV'],
     datasets:[
@@ -15,18 +9,18 @@ const data = (canvas) => {
         label: 'Stock A',
         fill: true,
         lineTension: 0.1,
-        backgroundColor: 'rgba(75,192,192,.0)',
-        borderColor: 'rgba(254, 54, 120,1)',
+        backgroundColor: 'rgba(28,221,239,.6)',
+        borderColor: 'rgba(28,239,239,1)',
         borderCapStyle: 'butt',
-        borderDash: [5,5],
+        borderDash: [0,0],
         borderDashOffset: 0.0,
         borderJoinStyle: 'miter',
-        pointBorderColor: 'rgba(254, 54, 120,1)',
-        pointBackgroundColor: 'rgba(254, 54, 120,1)',
+        pointBorderColor: 'rgba(28,239,239,1)',
+        pointBackgroundColor: 'rgba(28,239,239,1)',
         pointBorderWidth: 2,
         pointHoverRadius: 5,
-        pointHoverBackgroundColor: 'rgba(254, 54, 120,1)',
-        pointHoverBorderColor: 'rgba(254, 54, 120,1)',
+        pointHoverBackgroundColor: 'rgba(28,239,239,1)',
+        pointHoverBorderColor: 'rgba(28,239,239,1)',
         pointHoverBorderWidth: 3,
         pointRadius: 4,
         pointHitRadius: 10,
@@ -35,18 +29,18 @@ const data = (canvas) => {
         label: "Stock B",
         fill: true,
         lineTension: 0.1,
-        backgroundColor: gradient,
-        borderColor: 'rgba(117,102,255.1)',
+        backgroundColor: 'rgba(24,144,255,0.6)',
+        borderColor: 'rgba(24,144,255,0.8)',
         borderCapStyle: 'butt',
         borderDash: [],
         borderDashOffset: 0.0,
         borderJoinStyle: 'miter',
-        pointBorderColor: 'rgba(117,102,255.1)',
-        pointBackgroundColor: 'rgba(117,102,255.1)',
+        pointBorderColor: 'rgba(24,144,255,0.6)',
+        pointBackgroundColor: 'rgba(24,144,255,0.6)',
         pointBorderWidth: 2,
         pointHoverRadius: 5,
-        pointHoverBackgroundColor: 'rgba(117,102,255.1)',
-        pointHoverBorderColor: 'rgba(117,102,255.1)',
+        pointHoverBackgroundColor: 'rgba(24,144,255,0.6)',
+        pointHoverBorderColor: 'rgba(24,144,255,0.6)',
         pointHoverBorderWidth: 3,
         pointRadius: 4,
         pointHitRadius: 10,
