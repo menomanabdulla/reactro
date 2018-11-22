@@ -5,7 +5,7 @@ import Dashboard from './router/dashboard';
 import ButtonUI from './router/ui-component/button';
 import PaginationUI from './router/ui-component/pagination';
 import CardUI from './router/ui-component/card';
-
+import ProgressUI from './router/ui-component/progress';
 
 import { Router, Route, Switch } from 'react-router';
 
@@ -91,7 +91,7 @@ class app extends React.Component {
             </div> 
           </Header>
           <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
-            <CardUI/>
+            <ProgressUI/>
           </Content>
         </Layout>
       </Layout>
