@@ -3,6 +3,10 @@ import { Layout, Menu, Icon} from 'antd';
 import ProfileMenu from './widget/profileMenu';
 import Dashboard from './router/dashboard';
 import ButtonUI from './router/ui-component/button';
+import PaginationUI from './router/ui-component/pagination';
+import CardUI from './router/ui-component/card';
+
+
 import { Router, Route, Switch } from 'react-router';
 
 const { Header, Sider, Content } = Layout;
@@ -87,7 +91,7 @@ class app extends React.Component {
             </div> 
           </Header>
           <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
-            <ButtonUI/>
+            <CardUI/>
           </Content>
         </Layout>
       </Layout>
