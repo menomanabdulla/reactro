@@ -6,6 +6,10 @@ import ButtonUI from './router/ui-component/button';
 import PaginationUI from './router/ui-component/pagination';
 import CardUI from './router/ui-component/card';
 import ProgressUI from './router/ui-component/progress';
+import {
+  CustomizedValidation,
+  WrappedRegistrationForm
+} from './router/form-component'
 
 import { Router, Route, Switch } from 'react-router';
 
@@ -37,12 +41,12 @@ class app extends React.Component {
           </div>
 
           <Menu mode="inline" defaultSelectedKeys={['1']}>
+            <Menu.Item className="menu-title-block">
+              <h3 className="menu-title">Dashboard</h3>
+            </Menu.Item>
             <Menu.Item key="1">
               <Icon type="crown" />
               <span>Dashboard</span>
-            </Menu.Item>
-            <Menu.Item className="menu-title-block">
-                <h3 className="menu-title">Dashboard</h3>
             </Menu.Item>
             <SubMenu
                 key="sub1"
@@ -91,7 +95,7 @@ class app extends React.Component {
             </div> 
           </Header>
           <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
-            <ProgressUI/>
+            <WrappedRegistrationForm/>
           </Content>
         </Layout>
       </Layout>

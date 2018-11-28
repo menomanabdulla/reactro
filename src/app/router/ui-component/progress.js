@@ -42,9 +42,9 @@ class ProgressUI extends React.Component{
                     <Col className="gutter-row" span={12}>
                         <div className="widgets-block progress-widgets">
                             <Progress type="circle" percent={this.state.percent} />
-                            <ButtonGroup>
-                            <Button onClick={this.decline} icon="minus" />
-                            <Button onClick={this.increase} icon="plus" />
+                                <ButtonGroup>
+                                <Button onClick={this.decline} icon="minus" />
+                                <Button onClick={this.increase} icon="plus" />
                             </ButtonGroup>
                         </div>
                     </Col>
